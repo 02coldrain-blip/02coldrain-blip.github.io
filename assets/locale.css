@@ -1,0 +1,67 @@
+.locale-switch {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 2px;
+  padding: 3px;
+  border: 1px solid #858783;
+  border-radius: 999px;
+  background: #080909;
+}
+
+.locale-switch button {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0 7px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+  font: 600 11px/1 Inter, Arial, sans-serif;
+  letter-spacing: .04em;
+}
+
+.locale-switch button:hover,
+.locale-switch button.is-active {
+  background: var(--lime);
+  color: var(--bg);
+}
+
+.locale-switch button:focus-visible {
+  outline: 2px solid var(--lime);
+  outline-offset: 3px;
+}
+
+.menu-dialog .locale-switch {
+  width: fit-content;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 1024px) {
+  .menu-dialog .locale-switch { display: none; }
+}
+
+@media (max-width: 767px) {
+  .site-header > .locale-switch { margin-left: auto; }
+  .site-header .menu-trigger { margin-left: 0; }
+  .site-header > .locale-switch { padding: 0; border: 0; background: none; }
+  .site-header > .locale-switch button.is-active { display: none; }
+  .site-header > .locale-switch button:not(.is-active) { border: 1px solid #858783; }
+}
+
+html[data-locale="ru"] .hero-title {
+  font-size: clamp(52px, 7vw, 132px);
+}
+
+html[data-locale="ru"] .hero-title .reality {
+  font-size: 1em;
+}
+
+html[data-locale="ru"] .display-heading {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 767px) {
+  html[data-locale="ru"] .hero-title { font-size: clamp(46px, 10vw, 75px); }
+}
