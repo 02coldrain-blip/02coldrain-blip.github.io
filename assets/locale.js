@@ -92,6 +92,7 @@
     'CONCEPT / DEMO': 'КОНЦЕПТ / ДЕМО',
     'DEMONSTRATION CONCEPT': 'ДЕМОНСТРАЦИОННЫЙ КОНЦЕПТ',
     'STUDIO WORK': 'РАБОТА СТУДИИ',
+    'SCRIPT-LED PRODUCTION': 'ПРОДАКШЕН ПО СЦЕНАРИЮ',
     'Estimated production budget': 'Ориентировочный бюджет',
     'From': 'От',
     'Price per finished scene. A complete video is quoted by scene count and complexity; editing, sound and extra formats are scoped separately.': 'Цена за готовую сцену. Стоимость ролика зависит от количества и сложности сцен; монтаж, звук и дополнительные форматы рассчитываются отдельно.',

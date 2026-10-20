@@ -34,8 +34,9 @@
 }
 
 .menu-dialog .locale-switch {
+  display: inline-flex;
   width: fit-content;
-  margin-bottom: 20px;
+  margin: 0 0 20px;
 }
 
 @media (min-width: 1024px) {
@@ -64,4 +65,5 @@ html[data-locale="ru"] .display-heading {
 
 @media (max-width: 767px) {
   html[data-locale="ru"] .hero-title { font-size: clamp(46px, 10vw, 75px); }
+  html[data-locale="ru"] .services-heading .display-heading br { display: revert; }
 }
