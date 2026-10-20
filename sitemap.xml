@@ -1,1 +1,56 @@
-<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://thatsparallel.space/</loc></url><url><loc>https://thatsparallel.space/work</loc></url><url><loc>https://thatsparallel.space/work/category/real-estate</loc></url><url><loc>https://thatsparallel.space/work/category/furniture</loc></url><url><loc>https://thatsparallel.space/work/category/brands</loc></url><url><loc>https://thatsparallel.space/work/category/hotels</loc></url><url><loc>https://thatsparallel.space/work/furniture-study</loc></url><url><loc>https://thatsparallel.space/work/brand-product-scenes</loc></url><url><loc>https://thatsparallel.space/work/brand-beauty-scenes</loc></url><url><loc>https://thatsparallel.space/work/brand-fashion-scenes</loc></url><url><loc>https://thatsparallel.space/work/brand-sport-scenes</loc></url><url><loc>https://thatsparallel.space/work/hotel-social-hosted-reel</loc></url><url><loc>https://thatsparallel.space/work/hotel-social-lifestyle</loc></url><url><loc>https://thatsparallel.space/work/hotel-social-atmosphere</loc></url><url><loc>https://thatsparallel.space/work/hotel-social-room-details</loc></url><url><loc>https://thatsparallel.space/work/furniture-nature-scenes</loc></url><url><loc>https://thatsparallel.space/work/furniture-seating-scenes</loc></url><url><loc>https://thatsparallel.space/work/furniture-sofa-film</loc></url><url><loc>https://thatsparallel.space/work/development-architecture-film</loc></url><url><loc>https://thatsparallel.space/work/development-arrival-film</loc></url></urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url><loc>https://thatsparallel.space/</loc>
+  </url>
+  <url><loc>https://thatsparallel.space/work/brand-beauty-scenes/</loc>
+    <video:video><video:thumbnail_loc>https://thatsparallel.space/media/beauty-and-fashion.webp</video:thumbnail_loc><video:title>BEAUTY &amp; FASHION</video:title><video:description>A series of visual ideas for beauty and fashion. A vertical compilation moving between fragrance, jewellery, fashion portraits and surreal desert scenes.</video:description><video:content_loc>https://thatsparallel.space/media/beauty-and-fashion-stream.mp4</video:content_loc></video:video>
+  </url>
+  <url><loc>https://thatsparallel.space/work/brand-fashion-scenes/</loc>
+    <video:video><video:thumbnail_loc>https://thatsparallel.space/media/fashion-and-accessories.webp</video:thumbnail_loc><video:title>FASHION &amp; ACCESSORIES</video:title><video:description>Fashion and accessories in unexpected settings. A vertical compilation combining fashion portraits, headphones, eyewear and large-scale outdoor visual ideas.</video:description><video:content_loc>https://thatsparallel.space/media/fashion-and-accessories-stream.mp4</video:content_loc></video:video>
+  </url>
+  <url><loc>https://thatsparallel.space/work/brand-product-scenes/</loc>
+    <video:video><video:thumbnail_loc>https://thatsparallel.space/media/product-and-lifestyle.webp</video:thumbnail_loc><video:title>PRODUCT &amp; LIFESTYLE</video:title><video:description>Short ideas, built to make a product impossible to ignore. A vertical compilation of independent creative scenes spanning food, footwear, a watch and lifestyle imagery.</video:description><video:content_loc>https://thatsparallel.space/media/product-and-lifestyle-stream.mp4</video:content_loc></video:video>
+  </url>
+  <url><loc>https://thatsparallel.space/work/brand-sport-scenes/</loc>
+    <video:video><video:thumbnail_loc>https://thatsparallel.space/media/product-and-sport.webp</video:thumbnail_loc><video:title>PRODUCT &amp; SPORT</video:title><video:description>Product ideas with movement and attitude. A vertical compilation spanning fashion, food, skincare, fragrance and motorsport imagery.</video:description><video:content_loc>https://thatsparallel.space/media/product-and-sport-stream.mp4</video:content_loc></video:video>
+  </url>
+  <url><loc>https://thatsparallel.space/work/category/brands/</loc>
+  </url>
+  <url><loc>https://thatsparallel.space/work/category/furniture/</loc>
+  </url>
+  <url><loc>https://thatsparallel.space/work/category/hotels/</loc>
+  </url>
+  <url><loc>https://thatsparallel.space/work/category/real-estate/</loc>
+  </url>
+  <url><loc>https://thatsparallel.space/work/development-architecture-film/</loc>
+    <video:video><video:thumbnail_loc>https://thatsparallel.space/media/real-estate-architecture.webp</video:thumbnail_loc><video:title>DEVELOPMENT VISUALS</video:title><video:description>Script-led AI film visualizing an unbuilt development. PARALLEL created the environments and shots without source footage or visual assets.</video:description><video:content_loc>https://thatsparallel.space/media/real-estate-architecture-stream.mp4</video:content_loc></video:video>
+  </url>
+  <url><loc>https://thatsparallel.space/work/development-arrival-film/</loc>
+    <video:video><video:thumbnail_loc>https://thatsparallel.space/media/real-estate-arrival.webp</video:thumbnail_loc><video:title>ARRIVAL FILM</video:title><video:description>A scripted arrival film for an unbuilt development. PARALLEL created and animated the hospitality and interior scenes from the supplied script.</video:description><video:content_loc>https://thatsparallel.space/media/real-estate-arrival-stream.mp4</video:content_loc></video:video>
+  </url>
+  <url><loc>https://thatsparallel.space/work/furniture-nature-scenes/</loc>
+    <video:video><video:thumbnail_loc>https://thatsparallel.space/media/furniture-nature.webp</video:thumbnail_loc><video:title>FURNITURE IN NATURE</video:title><video:description>Furniture placed in unexpected natural settings. Sofas and chairs move between a coastal setting, rice fields and a tropical waterfall.</video:description><video:content_loc>https://thatsparallel.space/media/furniture-nature-stream.mp4</video:content_loc></video:video>
+  </url>
+  <url><loc>https://thatsparallel.space/work/furniture-seating-scenes/</loc>
+    <video:video><video:thumbnail_loc>https://thatsparallel.space/media/furniture-seating.webp</video:thumbnail_loc><video:title>CHAIRS &amp; ARMCHAIRS</video:title><video:description>Seating presented through light, materials and composition. A short sequence of chairs and armchairs in restrained interior settings.</video:description><video:content_loc>https://thatsparallel.space/media/furniture-seating-stream.mp4</video:content_loc></video:video>
+  </url>
+  <url><loc>https://thatsparallel.space/work/furniture-sofa-film/</loc>
+    <video:video><video:thumbnail_loc>https://thatsparallel.space/media/furniture-sofa.webp</video:thumbnail_loc><video:title>SOFA DETAILS</video:title><video:description>A sofa, explored through details and different arrangements. A grey sofa presented through room views, close-ups and a sequence of changing arrangements.</video:description><video:content_loc>https://thatsparallel.space/media/furniture-sofa-stream.mp4</video:content_loc></video:video>
+  </url>
+  <url><loc>https://thatsparallel.space/work/furniture-study/</loc>
+  </url>
+  <url><loc>https://thatsparallel.space/work/hotel-social-atmosphere/</loc>
+    <video:video><video:thumbnail_loc>https://thatsparallel.space/media/hotel-atmosphere.webp</video:thumbnail_loc><video:title>HOTEL ATMOSPHERE</video:title><video:description>Quiet details and moments around the stay. Quiet interior details, warm light, greenery and a short yoga scene create an atmosphere-led vertical reel.</video:description><video:content_loc>https://thatsparallel.space/media/hotel-atmosphere-stream.mp4</video:content_loc></video:video>
+  </url>
+  <url><loc>https://thatsparallel.space/work/hotel-social-hosted-reel/</loc>
+    <video:video><video:thumbnail_loc>https://thatsparallel.space/media/hotel-hosted-reel.webp</video:thumbnail_loc><video:title>HOSTED REEL</video:title><video:description>A guest-led introduction to a hotel stay. A guest-led vertical reel moving between the pool, bedroom and gardens.</video:description><video:content_loc>https://thatsparallel.space/media/hotel-hosted-reel-stream.mp4</video:content_loc></video:video>
+  </url>
+  <url><loc>https://thatsparallel.space/work/hotel-social-lifestyle/</loc>
+    <video:video><video:thumbnail_loc>https://thatsparallel.space/media/hotel-lifestyle.webp</video:thumbnail_loc><video:title>HOTEL LIFESTYLE</video:title><video:description>Everyday experiences, shaped into a hotel reel. A day-in-the-life sequence across the room, pool, outdoor training and time outside, ending with an evening pool view.</video:description><video:content_loc>https://thatsparallel.space/media/hotel-lifestyle-stream.mp4</video:content_loc></video:video>
+  </url>
+  <url><loc>https://thatsparallel.space/work/hotel-social-room-details/</loc>
+    <video:video><video:thumbnail_loc>https://thatsparallel.space/media/hotel-room-details.webp</video:thumbnail_loc><video:title>ROOM DETAILS</video:title><video:description>Room details, made into social content. Coffee preparation, warm-lit fittings, a shower scene and the bedroom turn room details into a short vertical story.</video:description><video:content_loc>https://thatsparallel.space/media/hotel-room-details-stream.mp4</video:content_loc></video:video>
+  </url>
+  <url><loc>https://thatsparallel.space/work/</loc>
+  </url>
+</urlset>
