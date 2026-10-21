@@ -66,4 +66,9 @@ html[data-locale="ru"] .display-heading {
 @media (max-width: 767px) {
   html[data-locale="ru"] .hero-title { font-size: clamp(46px, 10vw, 75px); }
   html[data-locale="ru"] .services-heading .display-heading br { display: revert; }
+  html[data-locale="ru"] .contact-section { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  html[data-locale="ru"] .contact-heading h2 { overflow-wrap: normal; }
+  html[data-locale="ru"] .contact-actions { padding-top: 0; padding-bottom: 66px; }
 }
+
+.js-ru-pending #root { visibility: hidden; }

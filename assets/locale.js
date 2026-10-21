@@ -247,13 +247,22 @@
   const originalMetadata = new Map();
   const russianTitles = new Set([...Object.values(pages).map(page => page[0]), 'Страница не найдена — PARALLEL']);
   const attributes = ['alt', 'aria-label', 'title', 'placeholder'];
-  const safeStorage = {
-    get() { try { return localStorage.getItem('parallel-language'); } catch { return null; } },
-    set(value) { try { localStorage.setItem('parallel-language', value); } catch { /* private mode */ } }
-  };
   const requested = new URLSearchParams(location.search).get('lang');
-  let language = requested === 'ru' || requested === 'en' ? requested : safeStorage.get() === 'ru' ? 'ru' : 'en';
+  const russianPath = /^\/ru(?=\/|$)/;
+  const language = russianPath.test(location.pathname) ? 'ru' : 'en';
   let scheduled = false;
+
+  function routePath() {
+    return (location.pathname.replace(russianPath, '') || '/').replace(/\/$/, '') || '/';
+  }
+
+  function languageUrl(value) {
+    const url = new URL(location.href);
+    const path = location.pathname.replace(russianPath, '') || '/';
+    url.pathname = value === 'ru' ? `/ru${path === '/' ? '/' : path}` : path;
+    url.searchParams.delete('lang');
+    return url.href;
+  }
 
   function translated(value) {
     const key = value.trim().replace(/\s+/g, ' ');
@@ -335,7 +344,7 @@
   }
 
   function updateMetadata() {
-    const path = location.pathname.replace(/\/$/, '') || '/';
+    const path = routePath();
     const title = document.querySelector('title');
     const description = document.querySelector('meta[name="description"]');
     const ogTitle = document.querySelector('meta[property="og:title"]');
@@ -352,13 +361,11 @@
     if (title && title.textContent !== content[0]) title.textContent = content[0];
     for (const element of [ogTitle, twitterTitle]) if (element && element.content !== content[0]) element.content = content[0];
     for (const element of [description, ogDescription, twitterDescription]) if (element && element.content !== content[1]) element.content = content[1];
-  }
-
-  function updateUrl() {
-    const url = new URL(location.href);
-    if (language === 'ru') url.searchParams.set('lang', 'ru');
-    else url.searchParams.delete('lang');
-    if (url.href !== location.href) history.replaceState(history.state, '', url);
+    const canonical = document.querySelector('link[rel="canonical"]');
+    const canonicalUrl = `https://thatsparallel.space${language === 'ru' ? '/ru' : ''}${path === '/' ? '/' : `${path}/`}`;
+    if (canonical && canonical.href !== canonicalUrl) canonical.href = canonicalUrl;
+    const ogUrl = document.querySelector('meta[property="og:url"]');
+    if (ogUrl && ogUrl.content !== canonicalUrl) ogUrl.content = canonicalUrl;
   }
 
   function render() {
@@ -373,7 +380,7 @@
       root.querySelectorAll('[alt], [aria-label], [title], [placeholder]').forEach(translateElement);
     }
     updateMetadata();
-    updateUrl();
+    document.documentElement.classList.remove('js-ru-pending');
   }
 
   function schedule() {
@@ -381,10 +388,8 @@
   }
 
   function setLanguage(value) {
-    if (value !== 'en' && value !== 'ru') return;
-    language = value;
-    safeStorage.set(value);
-    render();
+    if ((value !== 'en' && value !== 'ru') || value === language) return;
+    location.assign(languageUrl(value));
   }
 
   function init() {
@@ -394,6 +399,7 @@
     new MutationObserver(schedule).observe(document.head, { childList: true, characterData: true, subtree: true, attributes: true, attributeFilter: ['content'] });
     window.addEventListener('popstate', schedule);
   }
-  if (document.readyState === 'complete') init();
-  else window.addEventListener('load', init, { once: true });
+  if (requested === 'ru' || requested === 'en') location.replace(languageUrl(requested));
+  else if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init, { once: true });
+  else init();
 })();

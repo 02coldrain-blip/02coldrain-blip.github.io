@@ -1,56 +1,176 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<urlset xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url><loc>https://thatsparallel.space/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/"/>
+  </url>
+  <url><loc>https://thatsparallel.space/ru/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/"/>
   </url>
   <url><loc>https://thatsparallel.space/work/brand-beauty-scenes/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/brand-beauty-scenes/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/brand-beauty-scenes/"/>
     <video:video><video:thumbnail_loc>https://thatsparallel.space/media/beauty-and-fashion.webp</video:thumbnail_loc><video:title>BEAUTY &amp; FASHION</video:title><video:description>A series of visual ideas for beauty and fashion. A vertical compilation moving between fragrance, jewellery, fashion portraits and surreal desert scenes.</video:description><video:content_loc>https://thatsparallel.space/media/beauty-and-fashion-stream.mp4</video:content_loc></video:video>
   </url>
+  <url><loc>https://thatsparallel.space/ru/work/brand-beauty-scenes/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/brand-beauty-scenes/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/brand-beauty-scenes/"/>
+  </url>
   <url><loc>https://thatsparallel.space/work/brand-fashion-scenes/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/brand-fashion-scenes/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/brand-fashion-scenes/"/>
     <video:video><video:thumbnail_loc>https://thatsparallel.space/media/fashion-and-accessories.webp</video:thumbnail_loc><video:title>FASHION &amp; ACCESSORIES</video:title><video:description>Fashion and accessories in unexpected settings. A vertical compilation combining fashion portraits, headphones, eyewear and large-scale outdoor visual ideas.</video:description><video:content_loc>https://thatsparallel.space/media/fashion-and-accessories-stream.mp4</video:content_loc></video:video>
   </url>
+  <url><loc>https://thatsparallel.space/ru/work/brand-fashion-scenes/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/brand-fashion-scenes/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/brand-fashion-scenes/"/>
+  </url>
   <url><loc>https://thatsparallel.space/work/brand-product-scenes/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/brand-product-scenes/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/brand-product-scenes/"/>
     <video:video><video:thumbnail_loc>https://thatsparallel.space/media/product-and-lifestyle.webp</video:thumbnail_loc><video:title>PRODUCT &amp; LIFESTYLE</video:title><video:description>Short ideas, built to make a product impossible to ignore. A vertical compilation of independent creative scenes spanning food, footwear, a watch and lifestyle imagery.</video:description><video:content_loc>https://thatsparallel.space/media/product-and-lifestyle-stream.mp4</video:content_loc></video:video>
   </url>
+  <url><loc>https://thatsparallel.space/ru/work/brand-product-scenes/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/brand-product-scenes/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/brand-product-scenes/"/>
+  </url>
   <url><loc>https://thatsparallel.space/work/brand-sport-scenes/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/brand-sport-scenes/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/brand-sport-scenes/"/>
     <video:video><video:thumbnail_loc>https://thatsparallel.space/media/product-and-sport.webp</video:thumbnail_loc><video:title>PRODUCT &amp; SPORT</video:title><video:description>Product ideas with movement and attitude. A vertical compilation spanning fashion, food, skincare, fragrance and motorsport imagery.</video:description><video:content_loc>https://thatsparallel.space/media/product-and-sport-stream.mp4</video:content_loc></video:video>
   </url>
+  <url><loc>https://thatsparallel.space/ru/work/brand-sport-scenes/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/brand-sport-scenes/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/brand-sport-scenes/"/>
+  </url>
   <url><loc>https://thatsparallel.space/work/category/brands/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/category/brands/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/category/brands/"/>
+  </url>
+  <url><loc>https://thatsparallel.space/ru/work/category/brands/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/category/brands/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/category/brands/"/>
   </url>
   <url><loc>https://thatsparallel.space/work/category/furniture/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/category/furniture/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/category/furniture/"/>
+  </url>
+  <url><loc>https://thatsparallel.space/ru/work/category/furniture/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/category/furniture/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/category/furniture/"/>
   </url>
   <url><loc>https://thatsparallel.space/work/category/hotels/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/category/hotels/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/category/hotels/"/>
+  </url>
+  <url><loc>https://thatsparallel.space/ru/work/category/hotels/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/category/hotels/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/category/hotels/"/>
   </url>
   <url><loc>https://thatsparallel.space/work/category/real-estate/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/category/real-estate/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/category/real-estate/"/>
+  </url>
+  <url><loc>https://thatsparallel.space/ru/work/category/real-estate/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/category/real-estate/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/category/real-estate/"/>
   </url>
   <url><loc>https://thatsparallel.space/work/development-architecture-film/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/development-architecture-film/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/development-architecture-film/"/>
     <video:video><video:thumbnail_loc>https://thatsparallel.space/media/real-estate-architecture.webp</video:thumbnail_loc><video:title>DEVELOPMENT VISUALS</video:title><video:description>Script-led AI film visualizing an unbuilt development. PARALLEL created the environments and shots without source footage or visual assets.</video:description><video:content_loc>https://thatsparallel.space/media/real-estate-architecture-stream.mp4</video:content_loc></video:video>
   </url>
+  <url><loc>https://thatsparallel.space/ru/work/development-architecture-film/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/development-architecture-film/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/development-architecture-film/"/>
+  </url>
   <url><loc>https://thatsparallel.space/work/development-arrival-film/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/development-arrival-film/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/development-arrival-film/"/>
     <video:video><video:thumbnail_loc>https://thatsparallel.space/media/real-estate-arrival.webp</video:thumbnail_loc><video:title>ARRIVAL FILM</video:title><video:description>A scripted arrival film for an unbuilt development. PARALLEL created and animated the hospitality and interior scenes from the supplied script.</video:description><video:content_loc>https://thatsparallel.space/media/real-estate-arrival-stream.mp4</video:content_loc></video:video>
   </url>
+  <url><loc>https://thatsparallel.space/ru/work/development-arrival-film/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/development-arrival-film/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/development-arrival-film/"/>
+  </url>
   <url><loc>https://thatsparallel.space/work/furniture-nature-scenes/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/furniture-nature-scenes/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/furniture-nature-scenes/"/>
     <video:video><video:thumbnail_loc>https://thatsparallel.space/media/furniture-nature.webp</video:thumbnail_loc><video:title>FURNITURE IN NATURE</video:title><video:description>Furniture placed in unexpected natural settings. Sofas and chairs move between a coastal setting, rice fields and a tropical waterfall.</video:description><video:content_loc>https://thatsparallel.space/media/furniture-nature-stream.mp4</video:content_loc></video:video>
   </url>
+  <url><loc>https://thatsparallel.space/ru/work/furniture-nature-scenes/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/furniture-nature-scenes/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/furniture-nature-scenes/"/>
+  </url>
   <url><loc>https://thatsparallel.space/work/furniture-seating-scenes/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/furniture-seating-scenes/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/furniture-seating-scenes/"/>
     <video:video><video:thumbnail_loc>https://thatsparallel.space/media/furniture-seating.webp</video:thumbnail_loc><video:title>CHAIRS &amp; ARMCHAIRS</video:title><video:description>Seating presented through light, materials and composition. A short sequence of chairs and armchairs in restrained interior settings.</video:description><video:content_loc>https://thatsparallel.space/media/furniture-seating-stream.mp4</video:content_loc></video:video>
   </url>
+  <url><loc>https://thatsparallel.space/ru/work/furniture-seating-scenes/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/furniture-seating-scenes/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/furniture-seating-scenes/"/>
+  </url>
   <url><loc>https://thatsparallel.space/work/furniture-sofa-film/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/furniture-sofa-film/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/furniture-sofa-film/"/>
     <video:video><video:thumbnail_loc>https://thatsparallel.space/media/furniture-sofa.webp</video:thumbnail_loc><video:title>SOFA DETAILS</video:title><video:description>A sofa, explored through details and different arrangements. A grey sofa presented through room views, close-ups and a sequence of changing arrangements.</video:description><video:content_loc>https://thatsparallel.space/media/furniture-sofa-stream.mp4</video:content_loc></video:video>
   </url>
+  <url><loc>https://thatsparallel.space/ru/work/furniture-sofa-film/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/furniture-sofa-film/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/furniture-sofa-film/"/>
+  </url>
   <url><loc>https://thatsparallel.space/work/furniture-study/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/furniture-study/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/furniture-study/"/>
+  </url>
+  <url><loc>https://thatsparallel.space/ru/work/furniture-study/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/furniture-study/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/furniture-study/"/>
   </url>
   <url><loc>https://thatsparallel.space/work/hotel-social-atmosphere/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/hotel-social-atmosphere/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/hotel-social-atmosphere/"/>
     <video:video><video:thumbnail_loc>https://thatsparallel.space/media/hotel-atmosphere.webp</video:thumbnail_loc><video:title>HOTEL ATMOSPHERE</video:title><video:description>Quiet details and moments around the stay. Quiet interior details, warm light, greenery and a short yoga scene create an atmosphere-led vertical reel.</video:description><video:content_loc>https://thatsparallel.space/media/hotel-atmosphere-stream.mp4</video:content_loc></video:video>
   </url>
+  <url><loc>https://thatsparallel.space/ru/work/hotel-social-atmosphere/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/hotel-social-atmosphere/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/hotel-social-atmosphere/"/>
+  </url>
   <url><loc>https://thatsparallel.space/work/hotel-social-hosted-reel/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/hotel-social-hosted-reel/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/hotel-social-hosted-reel/"/>
     <video:video><video:thumbnail_loc>https://thatsparallel.space/media/hotel-hosted-reel.webp</video:thumbnail_loc><video:title>HOSTED REEL</video:title><video:description>A guest-led introduction to a hotel stay. A guest-led vertical reel moving between the pool, bedroom and gardens.</video:description><video:content_loc>https://thatsparallel.space/media/hotel-hosted-reel-stream.mp4</video:content_loc></video:video>
   </url>
+  <url><loc>https://thatsparallel.space/ru/work/hotel-social-hosted-reel/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/hotel-social-hosted-reel/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/hotel-social-hosted-reel/"/>
+  </url>
   <url><loc>https://thatsparallel.space/work/hotel-social-lifestyle/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/hotel-social-lifestyle/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/hotel-social-lifestyle/"/>
     <video:video><video:thumbnail_loc>https://thatsparallel.space/media/hotel-lifestyle.webp</video:thumbnail_loc><video:title>HOTEL LIFESTYLE</video:title><video:description>Everyday experiences, shaped into a hotel reel. A day-in-the-life sequence across the room, pool, outdoor training and time outside, ending with an evening pool view.</video:description><video:content_loc>https://thatsparallel.space/media/hotel-lifestyle-stream.mp4</video:content_loc></video:video>
   </url>
+  <url><loc>https://thatsparallel.space/ru/work/hotel-social-lifestyle/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/hotel-social-lifestyle/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/hotel-social-lifestyle/"/>
+  </url>
   <url><loc>https://thatsparallel.space/work/hotel-social-room-details/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/hotel-social-room-details/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/hotel-social-room-details/"/>
     <video:video><video:thumbnail_loc>https://thatsparallel.space/media/hotel-room-details.webp</video:thumbnail_loc><video:title>ROOM DETAILS</video:title><video:description>Room details, made into social content. Coffee preparation, warm-lit fittings, a shower scene and the bedroom turn room details into a short vertical story.</video:description><video:content_loc>https://thatsparallel.space/media/hotel-room-details-stream.mp4</video:content_loc></video:video>
   </url>
+  <url><loc>https://thatsparallel.space/ru/work/hotel-social-room-details/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/hotel-social-room-details/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/hotel-social-room-details/"/>
+  </url>
   <url><loc>https://thatsparallel.space/work/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/"/>
+  </url>
+  <url><loc>https://thatsparallel.space/ru/work/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/"/>
   </url>
 </urlset>
