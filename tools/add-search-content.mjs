@@ -26,7 +26,7 @@ function visit(directory) {
       .replace(/\s*<script defer src="\/assets\/search-content\.js(?:\?v=[^"]+)?"><\/script>/g, '')
       .replace(/\/assets\/locale\.(js|css)\?v=[^"']+/g, '/assets/locale.$1?v=4');
     if (!html.includes('<script defer src="/assets/locale.js?v=4"></script>')) throw new Error(`Missing locale hook: ${local}`);
-    html = html.replace('<script defer src="/assets/locale.js?v=4"></script>', '<script defer src="/assets/search-content.js?v=1"></script>\n  <script defer src="/assets/locale.js?v=4"></script>');
+    html = html.replace('<script defer src="/assets/locale.js?v=4"></script>', '<script defer src="/assets/search-content.js?v=2"></script>\n  <script defer src="/assets/locale.js?v=4"></script>');
     if (content) {
       const block = `<!-- search-content:start -->${content}<!-- search-content:end -->`;
       if (route === '/') html = html.replace(/<section id="about"/, `${block}<section id="about"`);

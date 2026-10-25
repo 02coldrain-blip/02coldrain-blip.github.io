@@ -32,6 +32,7 @@ for (const address of urls) {
   assert.equal((html.match(/class="search-content(?: |")/g) || []).length, block ? 1 : 0, address);
   if (block) {
     blocks++;
+    assert(!block.includes('\u2197'), `Decorative arrow: ${address}`);
     assert(html.includes(block), `Static/runtime mismatch: ${address}`);
     assert.equal((block.match(/id="search-content-heading"/g) || []).length, 1);
     for (const [, target] of block.matchAll(/href="(\/[^"]+)"/g)) {

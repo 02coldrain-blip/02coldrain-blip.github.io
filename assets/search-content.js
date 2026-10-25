@@ -121,7 +121,7 @@
     const service = services[key]?.[language];
     let content = '';
     if (route === '/') {
-      content = `<h2 id="search-content-heading">${l.services}</h2><nav class="search-service-links" aria-label="${l.services}">${Object.entries(l.categories).map(([key, name]) => `<a href="${url(`/work/category/${key}`, language)}#production">${escape(name)} <span aria-hidden="true">↗</span></a>`).join('')}</nav><h2>${l.faq}</h2><div class="search-copy-grid">${l.questions.map(([q, a]) => card(q, a)).join('')}</div>`;
+      content = `<h2 id="search-content-heading">${l.services}</h2><nav class="search-service-links" aria-label="${l.services}">${Object.entries(l.categories).map(([key, name]) => `<a href="${url(`/work/category/${key}`, language)}#production">${escape(name)}</a>`).join('')}</nav><h2>${l.faq}</h2><div class="search-copy-grid">${l.questions.map(([q, a]) => card(q, a)).join('')}</div>`;
     } else if (service) {
       content = `<h2 id="search-content-heading">${escape(service.title)}</h2>${paragraph(service.intro)}<div class="search-copy-grid">${card(l.output, service.output)}${card(l.inputs, service.inputs)}${card(l.limit, service.limit)}${card(l.scope, l.scopeText)}</div><h3>${l.related}</h3><ul class="search-related">${service.links.map(([slug, name]) => `<li><a href="${url(`/work/${slug}`, language)}">${escape(name)}</a></li>`).join('')}</ul>`;
     } else if (/^\/work\/development-(architecture|arrival)-film$/.test(route)) {
@@ -136,10 +136,10 @@
         ['Scene production', arrival ? 'We independently constructed the arrival, hospitality and interior scenes, then generated and animated the imagery.' : 'We independently developed the environments and every shot, combining AI imagery, animation and editing.'],
         ['Output and limitations', 'A finished vertical advertising film. The imagery visualizes an unbuilt development rather than documenting a completed property; no sales or campaign performance results are claimed.']
       ];
-      content = `<h2 id="search-content-heading">${title}</h2><div class="search-copy-grid">${steps.map(([title, body]) => card(title, body)).join('')}</div><a href="${url('/work/category/real-estate', language)}#production">${escape(labels[language].categories['real-estate'])} ↗</a>`;
+      content = `<h2 id="search-content-heading">${title}</h2><div class="search-copy-grid">${steps.map(([title, body]) => card(title, body)).join('')}</div><a href="${url('/work/category/real-estate', language)}#production">${escape(labels[language].categories['real-estate'])}</a>`;
     }
     if (!content) return '';
-    return `<section id="production" class="search-content${route === '/' ? ' search-content--home' : ''}" data-search-route="${escape(route)}" data-search-language="${language}" aria-labelledby="search-content-heading">${content}<a class="search-contact" href="mailto:work@thatsparallel.space">${l.contact} <span aria-hidden="true">↗</span></a></section>`;
+    return `<section id="production" class="search-content${route === '/' ? ' search-content--home' : ''}" data-search-route="${escape(route)}" data-search-language="${language}" aria-labelledby="search-content-heading">${content}<a class="search-contact" href="mailto:work@thatsparallel.space">${l.contact}</a></section>`;
   }
 
   function schema(route, language) {
