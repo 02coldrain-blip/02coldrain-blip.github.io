@@ -283,7 +283,7 @@
   }
 
   function translateText(node) {
-    if (node.parentElement?.closest('script, style, .locale-switch')) return;
+    if (node.parentElement?.closest('script, style, .locale-switch, .search-content')) return;
     const current = node.nodeValue;
     let source = originalText.get(node);
     if (source === undefined || (language === 'ru' && current !== withWhitespace(source, translated(source) || source) && translated(current))) {
@@ -373,6 +373,7 @@
     document.documentElement.lang = language;
     document.documentElement.dataset.locale = language;
     ensureSwitchers();
+    window.parallelSearchContent?.sync(routePath(), language);
     const root = document.getElementById('root');
     if (root) {
       const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
