@@ -1,6 +1,55 @@
 /* Russian interface layer for the prebuilt PARALLEL site. Keep English as the source text. */
 (() => {
   const strings = {
+    // portfolio-additions:dictionary:start
+    "3 projects": "3 проекта",
+    "5 projects": "5 проектов",
+    "6 projects": "6 проектов",
+    "ENGRAVING IN MOTION": "ОЖИВШАЯ ГРАВЮРА",
+    "Art & Motion": "Искусство и анимация",
+    "Illustration animation": "Анимация иллюстрации",
+    "A monochrome winged figure, brought into motion.": "Монохромная крылатая фигура, ожившая в движении.",
+    "The camera moves around a winged figure with a sword, revealing the texture of an engraving, layered clouds and changes in light. The vertical sequence moves from the full composition to a close view of the blade.": "Камера обходит крылатую фигуру с мечом, раскрывая фактуру гравюры, слои облаков и изменения света. Вертикальная последовательность переходит от общей композиции к крупному плану клинка.",
+    "A monochrome engraving-style winged figure holding a sword beneath textured clouds.": "Монохромная крылатая фигура с мечом под фактурными облаками в стилистике гравюры.",
+    "AI-generated illustration animation.": "AI-анимация иллюстрации.",
+    "Vertical illustration animation": "Вертикальная анимация иллюстрации",
+    "Moving camera and detail shots": "Движение камеры и крупные планы",
+    "ENGRAVING IN MOTION creative video": "Креативное видео: ожившая гравюра",
+    "Art & Motion: ENGRAVING IN MOTION": "Искусство и анимация: ОЖИВШАЯ ГРАВЮРА",
+    "PRIVATE JET": "ЧАСТНЫЙ ДЖЕТ",
+    "Fashion & Lifestyle": "Мода и лайфстайл",
+    "Lifestyle creative video": "Креативное лайфстайл-видео",
+    "Dark styling and a meal inside a private jet.": "Тёмный образ и обед в салоне частного джета.",
+    "A hooded character in statement eyewear moves through a private-jet cabin, takes a seat and unpacks food. The short vertical edit combines cabin movement, character close-ups and tabletop details.": "Персонаж в капюшоне и выразительных очках проходит по салону частного джета, садится за стол и достаёт еду. Короткий вертикальный монтаж соединяет движение в салоне, крупные планы героя и детали на столе.",
+    "A hooded character wearing white statement eyewear at a table inside a private jet.": "Персонаж в капюшоне и белых очках за столом в салоне частного джета.",
+    "AI-generated lifestyle video.": "AI-ролик в жанре лайфстайл.",
+    "Vertical lifestyle video": "Вертикальное лайфстайл-видео",
+    "Character and interior scenes": "Сцены с героем и интерьером",
+    "PRIVATE JET creative video": "Креативное видео: частный джет",
+    "Fashion & Lifestyle: PRIVATE JET": "Мода и лайфстайл: ЧАСТНЫЙ ДЖЕТ",
+    "ROOM TRANSFORMATIONS": "МЕБЕЛЬ В ИНТЕРЬЕРЕ",
+    "Furniture": "Мебель",
+    "Furniture and interior video": "Видео о мебели и интерьере",
+    "One living room, several furniture arrangements.": "Одна гостиная и несколько вариантов расстановки мебели.",
+    "An overhead view holds the room in place while sofas, chairs, cushions and side pieces change. The sequence compares different furniture compositions within the same interior and lighting.": "Ракурс сверху сохраняет пространство комнаты, пока диваны, кресла, подушки и небольшие предметы сменяют друг друга. Ролик сравнивает мебельные композиции в одном интерьере и освещении.",
+    "An overhead living-room view with a grey sectional sofa, armchairs and a large rug.": "Гостиная сверху: серый угловой диван, кресла и большой ковёр.",
+    "AI furniture and interior visualization.": "AI-визуализация мебели и интерьера.",
+    "Vertical furniture video": "Вертикальное видео о мебели",
+    "Alternative room arrangements": "Разные варианты расстановки в комнате",
+    "ROOM TRANSFORMATIONS creative video": "Креативное видео: мебель в интерьере",
+    "Furniture: ROOM TRANSFORMATIONS": "Мебель: МЕБЕЛЬ В ИНТЕРЬЕРЕ",
+    "BLACK SANDS OASIS": "BLACK SANDS OASIS",
+    "Real Estate": "Недвижимость",
+    "Architectural reveal film": "Архитектурный ролик",
+    "A sand-textured reveal of a villa and its pool courtyard.": "Вилла и двор с бассейном, возникающие из песчаной фактуры.",
+    "The Black Sands Oasis title gives way to a sand-like transition that reveals a terracotta-toned villa. The vertical film moves through the architecture, outdoor seating and pool courtyard.": "Название Black Sands Oasis сменяется песчаным переходом, который раскрывает виллу в терракотовых тонах. Вертикальный ролик показывает архитектуру, зону отдыха на открытом воздухе и двор с бассейном.",
+    "A terracotta-toned villa with outdoor seating, a swimming pool and tropical planting.": "Вилла в терракотовых тонах с зоной отдыха, бассейном и тропическими растениями.",
+    "AI architectural visualization. Not documentary footage.": "AI-визуализация архитектуры, а не документальная съёмка.",
+    "Vertical architectural film": "Вертикальный архитектурный ролик",
+    "Sand-textured reveal and property views": "Песчаный переход и виды объекта",
+    "BLACK SANDS OASIS creative video": "Креативное видео: black sands oasis",
+    "Real Estate: BLACK SANDS OASIS": "Недвижимость: BLACK SANDS OASIS",
+    // portfolio-additions:dictionary:end
     'Skip to content': 'Перейти к содержимому',
     'AI PRODUCTION STUDIO': 'СТУДИЯ AI-ПРОДАКШЕНА',
     'Work': 'Работы',
@@ -220,6 +269,12 @@
   };
 
   const pages = {
+    // portfolio-additions:metadata:start
+    "/work/engraving-in-motion": ["ОЖИВШАЯ ГРАВЮРА: AI-видео | PARALLEL","Монохромная крылатая фигура, ожившая в движении."],
+    "/work/private-jet-scene": ["ЧАСТНЫЙ ДЖЕТ: AI-видео | PARALLEL","Тёмный образ и обед в салоне частного джета."],
+    "/work/furniture-room-transformations": ["МЕБЕЛЬ В ИНТЕРЬЕРЕ: AI-видео | PARALLEL","Одна гостиная и несколько вариантов расстановки мебели."],
+    "/work/black-sands-oasis": ["BLACK SANDS OASIS: AI-видео | PARALLEL","Вилла и двор с бассейном, возникающие из песчаной фактуры."],
+    // portfolio-additions:metadata:end
     '/': ['AI-видео и изображения для брендов | PARALLEL', 'PARALLEL — независимая креативная студия. Создаём AI-видео, рекламные изображения и готовые ролики для брендов, недвижимости, мебели и отелей.'],
     '/work': ['Работы: AI-видео и изображения | PARALLEL', 'Портфолио PARALLEL: фильмы о недвижимости, визуализация мебели, концепции для брендов и ролики для отелей.'],
     '/work/category/real-estate': ['AI-фильмы и визуализация недвижимости | PARALLEL', 'Фильмы по сценарию и архитектурная визуализация ещё не построенных объектов. Проекты PARALLEL: концепция, создание сцен и монтаж.'],
@@ -264,13 +319,17 @@
     return url.href;
   }
 
+  function projectWord(count) {
+    return count % 10 === 1 && count % 100 !== 11 ? 'проект' : count % 10 >= 2 && count % 10 <= 4 && (count % 100 < 12 || count % 100 > 14) ? 'проекта' : 'проектов';
+  }
+
   function translated(value) {
     const key = value.trim().replace(/\s+/g, ' ');
     if (Object.hasOwn(strings, key)) return strings[key];
     const price = /^From \$(\d+) \/ scene$/.exec(key);
     if (price) return `От $${price[1]} за сцену`;
-    const project = /^(\d+) PROJECTS?$/.exec(key);
-    if (project) return `${project[1]} ${project[1] === '1' ? 'проект' : 'проекта'}`;
+    const project = /^(\d+) PROJECTS?$/i.exec(key);
+    if (project) return `${project[1]} ${projectWord(Number(project[1]))}`;
     const video = /^(.+) creative video$/.exec(key);
     if (video && strings[video[1]]) return `Креативное видео: ${strings[video[1]].toLowerCase()}`;
     const category = /^([^:]+): (.+)$/.exec(key);
@@ -290,7 +349,8 @@
       source = current;
       originalText.set(node, source);
     }
-    const target = language === 'ru' ? translated(source) : null;
+    const status = node.parentElement?.closest('.filter-status');
+    const target = language === 'ru' ? status && /^PROJECTS?$/.test(source.trim()) ? projectWord(Number(status.textContent.match(/\d+/)?.[0] || 0)).toUpperCase() : translated(source) : null;
     const next = target ? withWhitespace(source, target) : source;
     if (current !== next) node.nodeValue = next;
   }

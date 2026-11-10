@@ -10,7 +10,7 @@ vm.runInNewContext(readFileSync(join(root, 'assets/search-content.js'), 'utf8'),
 const { markup, schema } = context.window.parallelSearchContent;
 const sitemap = readFileSync(join(root, 'sitemap.xml'), 'utf8');
 const urls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(match => match[1]);
-assert.equal(urls.length, 40);
+assert.equal(urls.length, 48);
 const titles = new Set(), descriptions = new Set();
 let blocks = 0, services = 0;
 for (const address of urls) {
@@ -42,7 +42,7 @@ for (const address of urls) {
       if (target.includes('#production')) assert(readFileSync(join(root, targetPath, 'index.html'), 'utf8').includes('id="production"'), target);
     }
     const sitemapEntry = sitemap.match(new RegExp(`<url><loc>${address.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}</loc>([\\s\\S]*?)</url>`))?.[1];
-    assert(sitemapEntry?.includes('<lastmod>2026-10-26</lastmod>'), address);
+    assert(/<lastmod>(2026-10-26|2026-11-10)<\/lastmod>/.test(sitemapEntry || ''), address);
   }
   for (const [, json] of html.matchAll(/<script[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)) {
     const data = JSON.parse(json);
@@ -58,4 +58,4 @@ assert.equal(blocks, 14);
 assert.equal(services, 8);
 assert.equal(markup('/work', 'en'), '');
 assert.equal(markup('/404', 'ru'), '');
-console.log('PASS: 40 indexable pages; 14 matching static/runtime content blocks; 8 Service schemas; unique metadata; working EN/RU links and sitemap lastmod.');
+console.log('PASS: 48 indexable pages; 14 matching static/runtime content blocks; 8 Service schemas; unique metadata; working EN/RU links and sitemap lastmod.');

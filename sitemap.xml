@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-  <url><loc>https://thatsparallel.space/</loc><lastmod>2026-10-26</lastmod>
+  <url><loc>https://thatsparallel.space/</loc><lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/"/>
   </url>
-  <url><loc>https://thatsparallel.space/ru/</loc><lastmod>2026-10-26</lastmod>
+  <url><loc>https://thatsparallel.space/ru/</loc><lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/"/>
   </url>
@@ -44,19 +44,19 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/brand-sport-scenes/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/brand-sport-scenes/"/>
   </url>
-  <url><loc>https://thatsparallel.space/work/category/brands/</loc><lastmod>2026-10-26</lastmod>
+  <url><loc>https://thatsparallel.space/work/category/brands/</loc><lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/category/brands/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/category/brands/"/>
   </url>
-  <url><loc>https://thatsparallel.space/ru/work/category/brands/</loc><lastmod>2026-10-26</lastmod>
+  <url><loc>https://thatsparallel.space/ru/work/category/brands/</loc><lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/category/brands/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/category/brands/"/>
   </url>
-  <url><loc>https://thatsparallel.space/work/category/furniture/</loc><lastmod>2026-10-26</lastmod>
+  <url><loc>https://thatsparallel.space/work/category/furniture/</loc><lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/category/furniture/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/category/furniture/"/>
   </url>
-  <url><loc>https://thatsparallel.space/ru/work/category/furniture/</loc><lastmod>2026-10-26</lastmod>
+  <url><loc>https://thatsparallel.space/ru/work/category/furniture/</loc><lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/category/furniture/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/category/furniture/"/>
   </url>
@@ -68,11 +68,11 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/category/hotels/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/category/hotels/"/>
   </url>
-  <url><loc>https://thatsparallel.space/work/category/real-estate/</loc><lastmod>2026-10-26</lastmod>
+  <url><loc>https://thatsparallel.space/work/category/real-estate/</loc><lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/category/real-estate/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/category/real-estate/"/>
   </url>
-  <url><loc>https://thatsparallel.space/ru/work/category/real-estate/</loc><lastmod>2026-10-26</lastmod>
+  <url><loc>https://thatsparallel.space/ru/work/category/real-estate/</loc><lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/category/real-estate/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/category/real-estate/"/>
   </url>
@@ -165,12 +165,20 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/hotel-social-room-details/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/hotel-social-room-details/"/>
   </url>
-  <url><loc>https://thatsparallel.space/work/</loc>
+  <url><loc>https://thatsparallel.space/work/</loc><lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/"/>
   </url>
-  <url><loc>https://thatsparallel.space/ru/work/</loc>
+  <url><loc>https://thatsparallel.space/ru/work/</loc><lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/"/>
   </url>
+  <url><loc>https://thatsparallel.space/work/engraving-in-motion/</loc><lastmod>2026-11-10</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/engraving-in-motion/"/><xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/engraving-in-motion/"/><video:video><video:thumbnail_loc>https://thatsparallel.space/media/engraving-in-motion.webp</video:thumbnail_loc><video:title>ENGRAVING IN MOTION</video:title><video:description>A monochrome winged figure, brought into motion.</video:description><video:content_loc>https://thatsparallel.space/media/engraving-in-motion-stream.mp4</video:content_loc></video:video></url>
+  <url><loc>https://thatsparallel.space/ru/work/engraving-in-motion/</loc><lastmod>2026-11-10</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/engraving-in-motion/"/><xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/engraving-in-motion/"/><video:video><video:thumbnail_loc>https://thatsparallel.space/media/engraving-in-motion.webp</video:thumbnail_loc><video:title>ОЖИВШАЯ ГРАВЮРА</video:title><video:description>Монохромная крылатая фигура, ожившая в движении.</video:description><video:content_loc>https://thatsparallel.space/media/engraving-in-motion-stream.mp4</video:content_loc></video:video></url>
+  <url><loc>https://thatsparallel.space/work/private-jet-scene/</loc><lastmod>2026-11-10</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/private-jet-scene/"/><xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/private-jet-scene/"/><video:video><video:thumbnail_loc>https://thatsparallel.space/media/private-jet-scene.webp</video:thumbnail_loc><video:title>PRIVATE JET</video:title><video:description>Dark styling and a meal inside a private jet.</video:description><video:content_loc>https://thatsparallel.space/media/private-jet-scene-stream.mp4</video:content_loc></video:video></url>
+  <url><loc>https://thatsparallel.space/ru/work/private-jet-scene/</loc><lastmod>2026-11-10</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/private-jet-scene/"/><xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/private-jet-scene/"/><video:video><video:thumbnail_loc>https://thatsparallel.space/media/private-jet-scene.webp</video:thumbnail_loc><video:title>ЧАСТНЫЙ ДЖЕТ</video:title><video:description>Тёмный образ и обед в салоне частного джета.</video:description><video:content_loc>https://thatsparallel.space/media/private-jet-scene-stream.mp4</video:content_loc></video:video></url>
+  <url><loc>https://thatsparallel.space/work/furniture-room-transformations/</loc><lastmod>2026-11-10</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/furniture-room-transformations/"/><xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/furniture-room-transformations/"/><video:video><video:thumbnail_loc>https://thatsparallel.space/media/furniture-room-transformations.webp</video:thumbnail_loc><video:title>ROOM TRANSFORMATIONS</video:title><video:description>One living room, several furniture arrangements.</video:description><video:content_loc>https://thatsparallel.space/media/furniture-room-transformations-stream.mp4</video:content_loc></video:video></url>
+  <url><loc>https://thatsparallel.space/ru/work/furniture-room-transformations/</loc><lastmod>2026-11-10</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/furniture-room-transformations/"/><xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/furniture-room-transformations/"/><video:video><video:thumbnail_loc>https://thatsparallel.space/media/furniture-room-transformations.webp</video:thumbnail_loc><video:title>МЕБЕЛЬ В ИНТЕРЬЕРЕ</video:title><video:description>Одна гостиная и несколько вариантов расстановки мебели.</video:description><video:content_loc>https://thatsparallel.space/media/furniture-room-transformations-stream.mp4</video:content_loc></video:video></url>
+  <url><loc>https://thatsparallel.space/work/black-sands-oasis/</loc><lastmod>2026-11-10</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/black-sands-oasis/"/><xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/black-sands-oasis/"/><video:video><video:thumbnail_loc>https://thatsparallel.space/media/black-sands-oasis.webp</video:thumbnail_loc><video:title>BLACK SANDS OASIS</video:title><video:description>A sand-textured reveal of a villa and its pool courtyard.</video:description><video:content_loc>https://thatsparallel.space/media/black-sands-oasis-stream.mp4</video:content_loc></video:video></url>
+  <url><loc>https://thatsparallel.space/ru/work/black-sands-oasis/</loc><lastmod>2026-11-10</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://thatsparallel.space/work/black-sands-oasis/"/><xhtml:link rel="alternate" hreflang="ru" href="https://thatsparallel.space/ru/work/black-sands-oasis/"/><video:video><video:thumbnail_loc>https://thatsparallel.space/media/black-sands-oasis.webp</video:thumbnail_loc><video:title>BLACK SANDS OASIS</video:title><video:description>Вилла и двор с бассейном, возникающие из песчаной фактуры.</video:description><video:content_loc>https://thatsparallel.space/media/black-sands-oasis-stream.mp4</video:content_loc></video:video></url>
 </urlset>
