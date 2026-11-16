@@ -2,6 +2,57 @@
 (() => {
   const entries = [
     {
+      slug: 'city-to-tropics', title: 'FROM CITY TO TROPICS', category: 'Hotel & Travel', portfolioGroup: 'hotels',
+      discipline: 'Travel transition film', uploadDate: '2026-11-16',
+      summary: 'From a subway carriage to the coast and a tropical hotel.',
+      direction: 'The edit follows a traveller from the city to a black-sand beach and an outdoor lounge. Changes of location connect the journey with the hotel setting, keeping the same character at the centre of the story.',
+      alt: 'A traveller in a yellow T-shirt relaxing in a tropical hotel lounge.',
+      mediaNote: 'Vertical hotel and travel film.',
+      deliverables: ['Vertical travel film', 'Location transitions and hotel scenes'], duration: 14.18,
+      ru: {
+        title: 'ИЗ ГОРОДА В ТРОПИКИ', category: 'Отели и путешествия', discipline: 'Тревел-ролик с переходами',
+        summary: 'Из вагона метро — к побережью и тропическому отелю.',
+        direction: 'Ролик следует за героиней из города на пляж с чёрным песком и в открытую лаунж-зону. Смена локаций связывает путешествие с пространством отеля, сохраняя героиню в центре истории.',
+        alt: 'Путешественница в жёлтой футболке отдыхает в лаунж-зоне тропического отеля.',
+        mediaNote: 'Вертикальный ролик об отеле и путешествии.',
+        deliverables: ['Вертикальный тревел-ролик', 'Переходы между локациями и сцены в отеле']
+      }
+    },
+    {
+      slug: 'chair-and-character', title: 'CHAIR AND CHARACTER', category: 'Furniture', portfolioGroup: 'furniture',
+      discipline: 'Furniture film with a character', uploadDate: '2026-11-16',
+      summary: 'A grey armchair, a character and expressive studio close-ups.',
+      direction: 'A character in sunglasses tries different poses in a grey armchair against a light studio background. Wide views give way to close-ups of the upholstery and label, connecting personality with product detail.',
+      alt: 'A man in sunglasses sitting in a grey upholstered armchair in a light studio.',
+      mediaNote: 'Vertical furniture film.',
+      deliverables: ['Vertical furniture film', 'Character scenes and upholstery close-ups'], duration: 11.06,
+      ru: {
+        title: 'КРЕСЛО И ХАРАКТЕР', category: 'Мебель', discipline: 'Предметный ролик с героем',
+        summary: 'Серое кресло, герой и выразительные студийные крупные планы.',
+        direction: 'Герой в тёмных очках меняет позы в сером кресле на светлом студийном фоне. Общие планы сменяются деталями обивки и бирки: характер героя сочетается с предметной подачей мебели.',
+        alt: 'Мужчина в тёмных очках сидит в сером мягком кресле в светлой студии.',
+        mediaNote: 'Вертикальный ролик о мебели.',
+        deliverables: ['Вертикальный предметный ролик', 'Сцены с героем и крупные планы обивки']
+      }
+    },
+    {
+      slug: 'hotel-walkthrough', title: 'HOTEL WALKTHROUGH', category: 'Hotel & Interiors', portfolioGroup: 'hotels',
+      discipline: 'Hotel and interior film', uploadDate: '2026-11-16',
+      summary: 'A quiet route through a hotel: balcony, interior details and tropical greenery.',
+      direction: 'The camera follows a guest through the hotel and pauses on a vase of flowers, an armchair and warm interior lighting. Balcony views and planted outdoor paths connect the rooms with their surroundings.',
+      alt: 'A light hotel interior with a grey armchair, wall lighting and a balcony opening.',
+      mediaNote: 'Vertical hotel and interior film.',
+      deliverables: ['Vertical hotel film', 'Interior details and outdoor transitions'], duration: 11.75,
+      ru: {
+        title: 'ПРОГУЛКА ПО ОТЕЛЮ', category: 'Отели и интерьеры', discipline: 'Ролик об отеле и интерьере',
+        summary: 'Спокойный маршрут по отелю: балкон, детали интерьера и тропическая зелень.',
+        direction: 'Камера следует за гостем по отелю и останавливается на вазе с цветами, кресле и тёплом интерьерном свете. Виды с балкона и озеленённые дорожки связывают комнаты с окружающим пространством.',
+        alt: 'Светлый интерьер отеля с серым креслом, настенным светильником и выходом на балкон.',
+        mediaNote: 'Вертикальный ролик об отеле и интерьере.',
+        deliverables: ['Вертикальный ролик об отеле', 'Детали интерьера и переходы на улицу']
+      }
+    },
+    {
       slug: 'engraving-in-motion', title: 'ENGRAVING IN MOTION', category: 'Art & Motion', portfolioGroup: 'brands',
       discipline: 'Illustration animation',
       summary: 'A monochrome winged figure, brought into motion.',
@@ -79,8 +130,8 @@
   };
   for (const entry of entries) {
     const route = `/work/${entry.slug}`;
-    metadata[route] = { title: `${entry.title}: AI Video | PARALLEL`, description: entry.summary };
-    russianMetadata[route] = [`${entry.ru.title}: AI-видео | PARALLEL`, entry.ru.summary];
+    metadata[route] = { title: `${entry.title}: ${entry.uploadDate ? 'Creative Video' : 'AI Video'} | PARALLEL`, description: entry.summary };
+    russianMetadata[route] = [`${entry.ru.title}: ${entry.uploadDate ? 'креативное видео' : 'AI-видео'} | PARALLEL`, entry.ru.summary];
     for (const key of ['title', 'category', 'discipline', 'summary', 'direction', 'alt', 'mediaNote']) dictionary[entry[key]] = entry.ru[key];
     entry.deliverables.forEach((value, index) => { dictionary[value] = entry.ru.deliverables[index]; });
     dictionary[`${entry.title} creative video`] = `Креативное видео: ${entry.ru.title.toLowerCase()}`;

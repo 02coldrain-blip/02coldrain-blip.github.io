@@ -27,7 +27,8 @@ if (start < 10 || end < start) throw new Error('Original project data anchor cha
 const originalArray = bundle.slice(start, end).replace('...window.parallelPortfolioAdditions.projects,', '');
 const originalProjects = new Function(`return (${originalArray});`)();
 const projects = [...additions.projects, ...originalProjects];
-if (!bundle.includes('import "./portfolio-additions.js?v=1";')) bundle = `import "./portfolio-additions.js?v=1";\n${bundle}`;
+if (!bundle.includes('import "./portfolio-additions.js?')) bundle = `import "./portfolio-additions.js?v=2";\n${bundle}`;
+bundle = bundle.replace(/import "\.\/portfolio-additions\.js\?v=\d+";/, 'import "./portfolio-additions.js?v=2";');
 if (!bundle.includes('var Er=[...window.parallelPortfolioAdditions.projects,')) bundle = bundle.replace('var Er=[', 'var Er=[...window.parallelPortfolioAdditions.projects,');
 const metaFallback = 'if(!seoMeta)seoMeta=window.parallelPortfolioAdditions.metadata[l];';
 if (!bundle.includes(metaFallback)) {
@@ -85,7 +86,7 @@ for (const project of additions.projects) {
     const graph = [
       { '@type': 'BreadcrumbList', itemListElement: crumbs.map((crumb, index) => ({ '@type': 'ListItem', position: index + 1, ...crumb })) },
       { '@type': 'CreativeWork', name: p.title, description: p.summary, url: address, inLanguage: language, image: origin + p.image, creator: { '@id': `${origin}/#organization` } },
-      { '@type': 'VideoObject', name: p.title, description: p.summary, thumbnailUrl: origin + p.image, contentUrl: origin + p.video, uploadDate: '2026-11-10', duration: `PT${p.duration}S`, inLanguage: language }
+      { '@type': 'VideoObject', name: p.title, description: p.summary, thumbnailUrl: origin + p.image, contentUrl: origin + p.video, uploadDate: p.uploadDate || '2026-11-10', duration: `PT${p.duration}S`, inLanguage: language }
     ];
     html = html.replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/, `<script type="application/ld+json">${json({ '@context': 'https://schema.org', '@graph': graph })}</script>`);
     const directory = join(root, prefix, 'work', p.slug);
@@ -139,7 +140,7 @@ function updateAssets(directory) {
     if (entry.isDirectory()) updateAssets(file);
     else if (entry.name.endsWith('.html')) {
       const html = readFileSync(file, 'utf8');
-      const updated = html.replace(/\/assets\/index-real-estate-20261019\.js(?:\?[^"']*)?/g, '/assets/index-real-estate-20261019.js?v=20261110').replace(/\/assets\/locale\.js\?v=\d+/g, '/assets/locale.js?v=5');
+      const updated = html.replace(/\/assets\/index-real-estate-20261019\.js(?:\?[^"']*)?/g, '/assets/index-real-estate-20261019.js?v=20261116').replace(/\/assets\/locale\.js\?v=\d+/g, '/assets/locale.js?v=6');
       if (updated !== html) writeFileSync(file, updated);
     }
   }
@@ -152,15 +153,15 @@ for (const project of additions.projects) {
   for (const language of ['en', 'ru']) {
     const address = origin + route(project.slug, language), p = content(project, language);
     const links = `<xhtml:link rel="alternate" hreflang="en" href="${origin + route(project.slug, 'en')}"/><xhtml:link rel="alternate" hreflang="ru" href="${origin + route(project.slug, 'ru')}"/>`;
-    const xml = `<url><loc>${address}</loc><lastmod>2026-11-10</lastmod>${links}<video:video><video:thumbnail_loc>${origin + p.image}</video:thumbnail_loc><video:title>${esc(p.title)}</video:title><video:description>${esc(p.summary)}</video:description><video:content_loc>${origin + p.video}</video:content_loc></video:video></url>`;
+    const xml = `<url><loc>${address}</loc><lastmod>${p.uploadDate || '2026-11-10'}</lastmod>${links}<video:video><video:thumbnail_loc>${origin + p.image}</video:thumbnail_loc><video:title>${esc(p.title)}</video:title><video:description>${esc(p.summary)}</video:description><video:content_loc>${origin + p.video}</video:content_loc></video:video></url>`;
     if (sitemap.includes(`<loc>${address}</loc>`)) sitemap = sitemap.replace(new RegExp(`<url><loc>${address.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}</loc>[\\s\\S]*?</url>`), xml);
     else sitemap = sitemap.replace('</urlset>', `  ${xml}\n</urlset>`);
   }
 }
 sitemap = sitemap.replace(/<url><loc>([^<]+)<\/loc>([\s\S]*?)<\/url>/g, (whole, address, rest) => {
   const path = new URL(address).pathname.replace(/^\/ru(?=\/)/, '');
-  if (!['/', '/work/', '/work/category/brands/', '/work/category/furniture/', '/work/category/real-estate/'].includes(path)) return whole;
-  return `<url><loc>${address}</loc><lastmod>2026-11-10</lastmod>${rest.replace(/<lastmod>[^<]*<\/lastmod>/g, '')}</url>`;
+  if (!['/', '/work/', '/work/category/furniture/', '/work/category/hotels/'].includes(path)) return whole;
+  return `<url><loc>${address}</loc><lastmod>2026-11-16</lastmod>${rest.replace(/<lastmod>[^<]*<\/lastmod>/g, '')}</url>`;
 });
 writeFileSync(sitemapFile, sitemap);
-console.log('Added four projects, eight EN/RU detail pages, updated category counts, navigation, runtime data and sitemap.');
+console.log(`Generated ${additions.projects.length} added projects and ${additions.projects.length * 2} EN/RU pages; updated category counts, navigation, runtime data and sitemap.`);

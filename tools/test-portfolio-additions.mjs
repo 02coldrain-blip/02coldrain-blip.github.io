@@ -7,20 +7,20 @@ const root = fileURLToPath(new URL('..', import.meta.url));
 const context = { window: {} };
 vm.runInNewContext(readFileSync(join(root, 'assets/portfolio-additions.js'), 'utf8'), context);
 const { projects, metadata, russianMetadata } = context.window.parallelPortfolioAdditions;
-assert.equal(projects.length, 4);
+assert.equal(projects.length, 7);
 const bundle = readFileSync(join(root, 'assets/index-real-estate-20261019.js'), 'utf8');
-assert(bundle.startsWith('import "./portfolio-additions.js?v=1";'));
+assert(bundle.startsWith('import "./portfolio-additions.js?v=2";'));
 const dataStart = bundle.indexOf('var Er=[') + 'var Er='.length;
 const dataEnd = bundle.indexOf('],Dr=e=>Er.find', dataStart) + 1;
 const allProjects = vm.runInNewContext(`(${bundle.slice(dataStart, dataEnd)})`, context);
-assert.equal(allProjects.length, 18);
-assert.equal(new Set(allProjects.map(project => project.slug)).size, 18);
+assert.equal(allProjects.length, 21);
+assert.equal(new Set(allProjects.map(project => project.slug)).size, 21);
 assert(bundle.includes('if(!seoMeta)seoMeta=window.parallelPortfolioAdditions.metadata[l];'));
 const locale = readFileSync(join(root, 'assets/locale.js'), 'utf8');
 const dictionary = locale.slice(locale.indexOf('  const strings = {'), locale.indexOf('  const originalText ='));
 const { strings, pages } = new Function(`${dictionary}\nreturn { strings, pages };`)();
 const sitemap = readFileSync(join(root, 'sitemap.xml'), 'utf8');
-assert.equal((sitemap.match(/<loc>/g) || []).length, 48);
+assert.equal((sitemap.match(/<loc>/g) || []).length, 54);
 for (const project of projects) {
   for (const language of ['en', 'ru']) {
     const prefix = language === 'ru' ? '/ru' : '';
@@ -40,7 +40,7 @@ for (const project of projects) {
       const graph = JSON.parse(json)['@graph'];
       for (const item of graph || []) if (item['@type'] === 'VideoObject') {
         assert.equal(item.contentUrl, 'https://thatsparallel.space' + project.video);
-        assert.equal(item.uploadDate, '2026-11-10');
+        assert.equal(item.uploadDate, project.uploadDate || '2026-11-10');
       }
     }
   }
@@ -51,7 +51,7 @@ for (const project of projects) {
     assert(asset.endsWith('.webp') ? bytes.subarray(8, 12).toString() === 'WEBP' : bytes.subarray(4, 8).toString() === 'ftyp', asset);
   }
 }
-for (const [category, count] of Object.entries({ 'real-estate': 3, furniture: 5, brands: 6, hotels: 4 })) {
+for (const [category, count] of Object.entries({ 'real-estate': 3, furniture: 6, brands: 6, hotels: 6 })) {
   for (const language of ['en', 'ru']) {
     const html = readFileSync(join(root, language === 'ru' ? 'ru' : '', 'work/category', category, 'index.html'), 'utf8');
     assert.equal((html.match(/class="project-card /g) || []).length, count);
@@ -60,4 +60,4 @@ for (const [category, count] of Object.entries({ 'real-estate': 3, furniture: 5,
     assert(html.replace(/<!--[\s\S]*?-->/g, '').includes(expectedLabel), category);
   }
 }
-console.log('PASS: 4 new projects; 8 EN/RU pages; 18 unique project records; 48 sitemap URLs; category counts, locale metadata, navigation, video schemas and 12 optimized assets.');
+console.log('PASS: 7 added projects; 14 EN/RU pages; 21 unique project records; 54 sitemap URLs; category counts, locale metadata, navigation, video schemas and 21 optimized assets.');
